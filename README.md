@@ -68,13 +68,22 @@ A REST API for user authentication built with the Fiber framework and Redis as t
 
 ### How to Run
 
-1. Start Redis using Docker Compose:
+1. Navigate to the `tugas2-fiber-login` directory:
    ```bash
    cd tugas2-fiber-login
+   ```
+
+2. Start Redis using Docker Compose:
+   ```bash   
    docker-compose up -d
    ```
 
-2. Run the Go application:
+3. Download Go dependencies:
+   ```bash
+   go mod tidy
+   ```
+
+4. Run the Go application:
    ```bash
    go run main.go
    ```
